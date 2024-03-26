@@ -1,0 +1,12 @@
+<h4>add Todos</h4>
+<form (ngSubmit)="onSubmit()"> 
+<div class="mb-3" >
+    <label for="exampleFormControlInput1" class="form-label">Add Title</label>
+    <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Add Description</label>
+    <textarea class="form-control" [(ngModel)]="description" id="description" name="description" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
